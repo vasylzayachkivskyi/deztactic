@@ -1,0 +1,102 @@
+//  --- heropest section --- //
+.heropest {
+    background-color: #F4F4F4;
+    padding: 72px 0 110px;
+}
+
+.heropest__left {
+    h1 {
+        color: #272729;
+        font-size: 57px;
+        line-height: 145%;
+        margin-bottom: 34px;
+        font-weight: 900;
+    }
+
+    p {
+        max-width: 495px;
+        margin-bottom: 78px;
+        color: #272729;
+        font-weight: 600;
+    }
+}
+
+.heropest__right {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+
+.heropest__right-icon {
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-height: 137px;
+        background-size: cover;
+    }
+}
+
+.heropest__right-info {
+    border-top: 1px solid #828282;
+    border-bottom: 1px solid #828282;
+    display: flex;
+    flex-wrap: wrap;
+    color: #272729;
+    font-size: 17px;
+    line-height: 140%;
+    font-weight: 600;
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+
+    .info-col {
+        width: 50%;
+        padding: 25px 10px;
+
+        &+.info-col {
+            border-left: 1px solid #828282;
+            padding-left: 49px;
+        }
+    }
+
+    .info-row {
+        border-top: 1px solid #828282;
+        width: 100%;
+        padding: 25px 0;
+
+        .title {
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 5px;
+            li{
+                width: 47%;
+                padding-left: 25px;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #272729;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
