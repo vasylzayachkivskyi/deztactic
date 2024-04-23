@@ -48,6 +48,7 @@
     a {
         color: #FFD300;
         text-decoration: underline;
+        text-underline-offset: 4px;
         transition: .3s ease;
         font-size: 18px;
         font-weight: 600;
@@ -137,6 +138,7 @@
     color: #FFD500;
     text-decoration: underline;
     font-size: 17px;
+    text-underline-offset: 4px;
     font-weight: 600;
     margin-bottom: 25px
 }

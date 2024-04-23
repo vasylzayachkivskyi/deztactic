@@ -116,6 +116,7 @@
         text-decoration: underline;
         font-weight: 600;
         transition: .3s ease;
+        text-underline-offset: 4px;
 
         img {
             margin-left: 9px;
@@ -468,6 +469,38 @@
         max-width: 100%;
         max-height: 378px;
         background-size: cover;
+    }
+}
+
+
+
+a[class*='lightcase-icon-'].lightcase-icon-prev {
+    background: url(../img/svg/arrow_slide_prev.svg) no-repeat center;
+}
+
+a[class*='lightcase-icon-'].lightcase-icon-next {
+    background: url(../img/svg/arrow_slide_next.svg) no-repeat center;
+}
+
+a[class*='lightcase-icon-'].lightcase-icon-close {
+    background: url(../img/svg/close.svg) no-repeat center;
+    border-radius: 50%;
+}
+
+a[class*='lightcase-icon-'].lightcase-icon-close,
+a[class*='lightcase-icon-'].lightcase-icon-prev,
+a[class*='lightcase-icon-'].lightcase-icon-next {
+    transition: .3s;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:before {
+        display: none;
     }
 }
 
@@ -1023,6 +1056,7 @@
 
     .advantages.dark .advantages__inner {
         row-gap: 30px;
+
         li {
             padding-right: 0;
             width: 100%;
