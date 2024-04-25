@@ -20,11 +20,17 @@ $(document).ready(function () {
             $('body').animate({
                 right: '250px'
             }, 400);
+            $('.header').animate({
+                right: '250px'
+            }, 400);
         } else {
             $('.mnu-wrapper').animate({
                 right: '-250px'
             }, 400);
             $('body').animate({
+                right: '0'
+            }, 400);
+            $('.header').animate({
                 right: '0'
             }, 400);
         }

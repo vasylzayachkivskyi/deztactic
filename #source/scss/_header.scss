@@ -3,6 +3,11 @@
     background-color: #272729;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 50;
 }
 
 .header-wrapper {
@@ -222,7 +227,6 @@
 .mnu li {
     display: block;
     margin-bottom: 10px;
-    white-space: nowrap;
 }
 
 .mnu li:last-child {
