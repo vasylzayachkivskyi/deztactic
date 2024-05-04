@@ -34,13 +34,13 @@
 }
 
 .heropest__right-icon {
-    padding-bottom: 80px;
+    padding-bottom: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     img {
-        max-height: 137px;
+        max-height: 300px;
         background-size: cover;
     }
 }
@@ -255,7 +255,7 @@
             }
 
             &:hover {
-                color: #FFD300;
+                opacity: 0.7;
 
                 &:before {
                     background-color: #FFD300;
@@ -347,9 +347,7 @@
         padding: 20px 10px;
     }
 
-    .heropest__right-icon {
-        padding-bottom: 50px;
-    }
+
 
     .heropest__left p {
         margin-bottom: 50px;
@@ -501,7 +499,7 @@
     }
 
     .heropest__right-icon {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
     .heropest__right-info .info-row ul li {

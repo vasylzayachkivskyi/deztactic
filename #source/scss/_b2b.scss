@@ -222,9 +222,14 @@
 .advantages.dark {
     background-color: #272729;
     color: #fff;
-
-    .advantages__img {
-        width: 32%;
+    .award{
+        width: 170px;
+        height: 170px;
+        background-size: cover;
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        z-index: 4;
     }
 
     .secttitle {
@@ -232,7 +237,6 @@
     }
 
     .advantages__inner {
-        width: 65%;
         row-gap: 80px;
     }
 
@@ -246,7 +250,7 @@
     }
 
     .advantages__title {
-        max-width: 72%;
+        // max-width: 72%;
         margin-bottom: 65px;
     }
 
@@ -338,6 +342,7 @@
 }
 
 .clients__marquee {
+    background: #fff;
     .swiper-wrapper {
         transition-timing-function: linear !important;
     }
@@ -620,17 +625,14 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
 //  --- ADAPTIVE --- //
 
-@media (max-width: 1799.8px) {
-    .advantages.dark .advantages__title {
-        max-width: 60%;
-    }
-
-    .advantages.dark .advantages__img {
-        width: 36%;
-    }
-}
 
 @media (max-width: 1599.8px) {
+    .advantages.dark .award {
+        width: 130px;
+        height: 130px;
+        top: 5px;
+        right: 5px;
+    }
     .advantages.dark .advantages__inner {
         row-gap: 50px;
 
@@ -649,11 +651,17 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
     }
 
     .advantages.dark .advantages__img {
-        width: 40%;
+        width: 42%;
     }
 }
 
 @media (max-width: 1399.8px) {
+    .advantages.dark .award {
+        width: 110px;
+        height: 110px;
+        top: 5px;
+        right: 5px;
+    }
     .certificates__slide {
         max-width: 460px;
     }
@@ -742,6 +750,12 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 1199.8px) {
+    .advantages.dark .award {
+        width: 90px;
+        height: 90px;
+        top: 0;
+        right: 0;
+    }
     .certificates__names .name-row {
         height: 60px;
         padding-right: 30px;
@@ -780,6 +794,12 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 991.8px) {
+    .advantages.dark .award {
+        width: 130px;
+        height: 130px;
+        top: initial;
+        right: calc((100vw / 2) - 340px);
+    }
     .certificates__title {
         margin-bottom: 30px;
     }
@@ -921,6 +941,11 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 767.8px) {
+    .advantages.dark .award {
+        width: 130px;
+        height: 130px;
+        right: 10px;
+    }
 
     .certificates__title,
     .comand__title {
@@ -994,6 +1019,11 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 575.8px) {
+    .advantages.dark .award {
+        width: 90px;
+        height: 90px;
+        right: 0px;
+    }
     .certificates__names {
         padding-right: 12px;
     }
@@ -1145,6 +1175,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 424.8px) {
+    .advantages.dark .award {
+        width: 75px;
+        height: 75px;
+    }
     .certificates__slide {
         max-width: 240px;
     }

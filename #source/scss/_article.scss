@@ -70,12 +70,6 @@ article {
             margin: 5px 0;
             transition: .3s;
 
-            &:before {
-                background-color: #272729;
-                width: calc(100% - 40px);
-                transition: .3s;
-            }
-
             &:after {
                 content: '';
                 position: absolute;
@@ -91,12 +85,8 @@ article {
             }
 
             &:hover {
-                color: #FFD500;
-                opacity: 1;
-
-                &:before {
-                    background-color: #FFD500;
-                }
+                opacity: .6;
+                color: #272729;
 
                 &:after {
                     transform: translate(5px, -50%);
@@ -191,6 +181,7 @@ article {
 
 .archive {
     padding: 134px 0 65px;
+    overflow: hidden;
 }
 
 .archive__inner {
@@ -321,16 +312,8 @@ article {
         position: relative;
         padding-right: 33px;
         transition: .3s;
-
-        &:before {
-            content: '';
-            position: absolute;
-            background-color: #272729;
-            width: calc(100% - 32px);
-            height: 1px;
-            bottom: 2px;
-            left: 0;
-        }
+        text-decoration: underline;
+        text-underline-offset: 4px;
 
         &:after {
             content: '';
@@ -483,17 +466,9 @@ article {
         padding-right: 33px;
         transition: .3s;
         font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 4px;
 
-        &:before {
-            content: '';
-            position: absolute;
-            width: calc(100% - 34px);
-            left: 0;
-            bottom: 1px;
-            background-color: #272729;
-            height: 1px;
-            transition: .3s;
-        }
 
         &:after {
             content: '';
@@ -512,10 +487,6 @@ article {
 
         &:hover {
             color: #FFD500;
-
-            &:before {
-                background-color: #FFD500;
-            }
 
             &:after {
                 transform: translate(5px, -50%);
