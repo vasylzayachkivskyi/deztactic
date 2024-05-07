@@ -6,6 +6,7 @@
     padding: 104px 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &:before {
         content: '';
@@ -202,6 +203,7 @@
 .parasites {
     background-color: #f4f4f4;
     padding: 60px 0 65px;
+    overflow: hidden;
 }
 
 .parasites__inner {
@@ -378,6 +380,7 @@
 .steps {
     padding: 78px 0 65px;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .steps__title {
@@ -642,6 +645,7 @@
 .video {
     padding: 60px 0 65px;
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 .video__title {
@@ -749,6 +753,7 @@
 .services {
     background-color: #fff;
     padding: 60px 0 65px;
+    overflow: hidden;
 }
 
 .services__title {
@@ -835,6 +840,7 @@
 .worklocation {
     background-color: #F4F4F4;
     padding: 60px 0 65px;
+    overflow: hidden;
 }
 
 .worklocation__title {
@@ -913,6 +919,7 @@
 .faq {
     padding: 60px 0 65px;
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 .faq__title {

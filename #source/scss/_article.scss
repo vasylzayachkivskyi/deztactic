@@ -212,6 +212,7 @@ article {
             a {
                 background-color: #000;
                 color: #fff;
+                padding-right: 35px;
 
                 &:after {
                     content: '';
@@ -220,7 +221,7 @@ article {
                     height: 16px;
                     background-image: url(../img/svg/categorie_item_arrow.svg);
                     background-size: cover;
-                    right: 25px;
+                    right: 20px;
                     top: 50%;
                     transform: translateY(-50%);
                 }
