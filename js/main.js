@@ -231,7 +231,6 @@ $(document).ready(function () {
     });
 
     // input mask
-
     $('.phone-input').mask('+38 (999) 999-99-99', {
         onBeforeMask: function (t, e) { return t.replace(/^38/g, '') },
         onBeforePaste: function (t, e) { return t.replace(/^38/g, '') }
@@ -252,7 +251,13 @@ $(document).ready(function () {
     });
 
 
-    new WOW().init();
+    // new WOW().init();
+    AOS.init({
+        once: true,
+        duration: 1200,
+        easing: 'ease-out-quad',
+        offset: -10,
+    });
 
     if ($('select').length) {
         $('select').styler();
