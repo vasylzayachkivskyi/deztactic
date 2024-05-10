@@ -18,7 +18,8 @@
         display: inline-block;
         top: 5%;
         left: 40%;
-        animation: hsCircle 7s ease-in-out infinite;
+        animation: hsCircle 7s .2s ease-in-out infinite;
+        opacity: 0;
     }
 
     &:after {
@@ -31,7 +32,8 @@
         display: inline-block;
         bottom: 25%;
         left: 35%;
-        animation: hsCircle2 7s ease-in-out reverse infinite;
+        animation: hsCircle2 7s .6s ease-in-out reverse infinite;
+        opacity: 0;
     }
 
     .award {
