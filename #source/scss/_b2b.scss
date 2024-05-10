@@ -46,6 +46,10 @@
 .features.dark {
     background-color: #1F1F21;
     color: #fff;
+    .features__item-icon img {
+        width: 134px;
+        height: 134px;
+    }
 }
 
 
@@ -92,10 +96,10 @@
     p {
         font-size: 18px;
         color: #fff;
-        line-height: 200%;
+        line-height: 180%;
         position: relative;
         margin-bottom: 34px;
-        font-weight: 600;
+        font-weight: 400;
         max-width: 540px;
 
         &:before {
@@ -232,6 +236,9 @@
         position: absolute;
         z-index: 4;
     }
+    .advantages__img {
+        width: 37%;
+    }
 
     .secttitle {
         color: #fff;
@@ -239,6 +246,7 @@
 
     .advantages__inner {
         row-gap: 80px;
+        width: 65%;
     }
 
     &:before,
@@ -251,7 +259,6 @@
     }
 
     .advantages__title {
-        // max-width: 72%;
         margin-bottom: 65px;
     }
 
@@ -428,9 +435,12 @@
             }
         }
 
-        img {
+        svg {
             width: 22px;
             background-size: cover;
+            path{
+                transition: .3s ease;
+            }
         }
 
         &:hover,
@@ -441,6 +451,9 @@
                 &::before {
                     left: 0;
                 }
+            }
+            svg path{
+                fill: #FFD300;
             }
         }
     }
@@ -628,6 +641,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
 
 @media (max-width: 1599.8px) {
+    .features.dark .features__item-icon img {
+        width: 120px;
+        height: 120px;
+    }
     .advantages.dark .award {
         width: 130px;
         height: 130px;
@@ -657,6 +674,9 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 1399.8px) {
+    .advantages.dark{
+        padding: 50px 0;
+    }
     .advantages.dark .award {
         width: 110px;
         height: 110px;
@@ -942,6 +962,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 767.8px) {
+    .features.dark .features__item-icon img {
+        width: 100px;
+        height: 100px;
+    }
     .advantages.dark .award {
         width: 130px;
         height: 130px;
@@ -1176,6 +1200,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 424.8px) {
+    .features.dark .features__item-icon img {
+        width: 70px;
+        height: 70px;
+    }
     .advantages.dark .award {
         width: 75px;
         height: 75px;

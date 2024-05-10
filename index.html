@@ -10,7 +10,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/lightcase.css">
-    <link rel="stylesheet" href="css/lib/animate.css">
     <link rel="stylesheet" href="css/lib/magnific-popup.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lib/ui-slider.css">
@@ -127,22 +126,20 @@
 
         <main class="main">
 
-            <section class="heroscreen">
-                <img src="img/medal.png" alt="award" class="award fadeInRight wow" data-wow-duration="1s" data-wow-delay="1s" 
-                data-aos="fade-left" data-aos-delay="500">
-                <img src="img/main_heroscreen.jpg" alt="image" class="heroscreen__image fadeIn wow"
-                    data-wow-duration="1.5s" data-wow-delay=".5s" data-aos="fade" data-aos-delay="300">
+            <section class="heroscreen" data-aos="fade">
+                <img src="img/medal.png" alt="award" class="award" data-aos="fade-left" data-aos-delay="500">
+                <img src="img/main_heroscreen.jpg" alt="image" class="heroscreen__image" data-aos="fade" data-aos-delay="300">
                 <div class="container">
-                    <div class="heroscreen__inner fadeIn wow" data-wow-duration="1s" data-aos="fade">
-                        <h1>
+                    <div class="heroscreen__inner ">
+                        <h1 data-wow-duration=".5s" data-aos="animUp">
                             Повне знищення усіх шкідників у вашій квартирі
                         </h1>
-                        <p>
+                        <p data-wow-duration=".5s" data-aos="animUp" data-aos-delay="200">
                             Наша зброя - найкращі препарати брендів Bayer, Syngenta, BASF, які мають міжнародний
                             сертифікат. Достатньо використати їх лише один раз, і ви назавжди забудете, що таке
                             шкідники!
                         </p>
-                        <a href="#quiz" class="red-btn modal-btn">розрахувати вартість</a>
+                        <a href="#quiz" class="red-btn modal-btn" data-aos="animScale" data-aos-delay="400">розрахувати вартість</a>
                     </div>
                 </div>
             </section>
@@ -150,7 +147,7 @@
             <section class="features">
                 <div class="container">
                     <div class="features__inner countsect">
-                        <div class="features__item fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-offset="30">
+                        <div class="features__item" data-aos="animUp" data-aos-offset="30">
                             <div class="features__item-icon">
                                 <img src="img/svg/feature1.svg" alt="icon">
                             </div>
@@ -167,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="features__item fadeInUp wow" data-wow-duration="2s" data-wow-delay=".2s" data-aos="fade-up" data-aos-delay="200" data-aos-offset="30">
+                        <div class="features__item" data-aos="animUp" data-aos-delay="200" data-aos-offset="30">
                             <div class="features__item-icon">
                                 <img src="img/svg/feature2.svg" alt="icon">
                             </div>
@@ -184,7 +181,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="features__item fadeInUp wow" data-wow-duration="2s" data-wow-delay=".4s" data-aos="fade-up" data-aos-delay="400" data-aos-offset="30">
+                        <div class="features__item" data-aos="animUp" data-aos-delay="400" data-aos-offset="30">
                             <div class="features__item-icon">
                                 <img src="img/svg/feature3.svg" alt="icon">
                             </div>
@@ -201,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="features__item fadeInUp wow" data-wow-duration="2s" data-wow-delay=".6s" data-aos="fade-up" data-aos-delay="600" data-aos-offset="30">
+                        <div class="features__item" data-aos="animUp" data-aos-delay="600" data-aos-offset="30">
                             <div class="features__item-icon">
                                 <img src="img/svg/feature4.svg" alt="icon">
                             </div>
@@ -218,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="features__item fadeInUp wow" data-wow-duration="2s" data-wow-delay=".8s" data-aos="fade-up" data-aos-delay="800" data-aos-offset="30">
+                        <div class="features__item" data-aos="animUp" data-aos-delay="800" data-aos-offset="30">
                             <div class="features__item-icon">
                                 <img src="img/svg/feature5.svg" alt="icon">
                             </div>
@@ -241,13 +238,13 @@
 
             <section class="parasites">
                 <div class="container">
-                    <div class="parasites__inner slideInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
-                        <div class="parasites__title">
+                    <div class="parasites__inner ">
+                        <div class="parasites__title" data-aos="animUp">
                             <h2 class="secttitle">
                                 Знищуємо більш ніж <span>20</span> видів шкідників
                             </h2>
                         </div>
-                        <div class="swiper-button-prev">
+                        <div class="swiper-button-prev" data-aos="animUp">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="45" height="45" rx="22.5"
@@ -256,7 +253,7 @@
                                     stroke-width="3" />
                             </svg>
                         </div>
-                        <div class="swiper parasites__slider">
+                        <div class="swiper parasites__slider" data-aos="animUp">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="parasites__slide">
@@ -396,7 +393,7 @@
                             </div>
                             <div class="swiper-scrollbar"></div>
                         </div>
-                        <div class="swiper-button-next">
+                        <div class="swiper-button-next" data-aos="animUp">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="45" y="45" width="45" height="45" rx="22.5" transform="rotate(180 45 45)"
@@ -409,15 +406,15 @@
                 </div>
             </section>
 
-            <section class="steps" data-aos="fade-up">
+            <section class="steps">
                 <div class="container">
-                    <div class="steps__title fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                    <div class="steps__title" data-aos="animUp">
                         <h2 class="secttitle">
                             Позбавимо від шкідників за <span>4</span> простих кроки
                         </h2>
                     </div>
                     <div class="steps__inner">
-                        <div class="steps__item fadeIn wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                        <div class="steps__item" data-aos="animScale" data-aos-duration="1500">
                             <div class="steps__item-top">
                                 <span>
                                     <span>
@@ -432,7 +429,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="steps__item fadeIn wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                        <div class="steps__item" data-aos="animScale" data-aos-delay="200" data-aos-duration="1500">
                             <div class="steps__item-top">
                                 <span>
                                     2
@@ -447,7 +444,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="steps__item fadeIn wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                        <div class="steps__item" data-aos="animScale" data-aos-delay="400" data-aos-duration="1500">
                             <div class="steps__item-top">
                                 <span>
                                     3
@@ -460,7 +457,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="steps__item fadeIn wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                        <div class="steps__item" data-aos="animScale" data-aos-delay="600" data-aos-duration="1500">
                             <div class="steps__item-top">
                                 <span>
                                     4
@@ -474,64 +471,64 @@
                             </div>
                         </div>
                     </div>
-                    <div class="steps__btn fadeIn wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
+                    <div class="steps__btn" data-aos="animUp" data-aos-delay="600">
                         <a href="#request-popup" class="red-btn modal-btn">дізнатись ціну</a>
                     </div>
                 </div>
             </section>
 
-            <section class="advantages">
-                <div class="advantages__title-mobile fadeInUp wow" data-wow-duration="2.5s" data-aos="fade-up">
+            <section class="advantages" data-aos="fade">
+                <div class="advantages__title-mobile"data-aos="animUp">
                     <h2 class="secttitle">
                         Чому нас обирає <span>90%</span>
                         клієнтів?
                     </h2>
                 </div>
-                <img src="img/advantages_img.jpg" alt="image" class="advantages__img fadeIn wow" data-wow-duration="2s" data-aos="fade" data-aos-delay="100">
+                <img src="img/advantages_img.jpg" alt="image" class="advantages__img " data-aos="fade" data-aos-delay="100">
                 <div class="container">
-                    <div class="advantages__title fadeInUp wow" data-wow-duration="2s" data-aos="fade-up">
+                    <div class="advantages__title " data-aos="animUp">
                         <h2 class="secttitle">
                             Чому нас обирає <span>90%</span> <br>
                             клієнтів?
                         </h2>
                     </div>
                     <ul class="advantages__inner">
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="100">
                             <img src="img/svg/advantage_icon1.svg" alt="advantage icon">
                             <p>
                                 Знищуємо всі види домашніх
                                 шкідників
                             </p>
                         </li>
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="200">
                             <img src="img/svg/advantage_icon2.svg" alt="advantage icon">
                             <p>
                                 Гарантія на наші послуги
                                 3 місяця
                             </p>
                         </li>
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="300">
                             <img src="img/svg/advantage_icon3.svg" alt="advantage icon">
                             <p>
                                 За необхідності робимо
                                 попередній огляд
                             </p>
                         </li>
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="400">
                             <img src="img/svg/advantage_icon4.svg" alt="advantage icon">
                             <p>
                                 Ви можете повернутися в приміщення вже через 4 години
                                 після обробки
                             </p>
                         </li>
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="500">
                             <img src="img/svg/advantage_icon5.svg" alt="advantage icon">
                             <p>
                                 Використовуємо тільки сертифіковане
                                 професійне обладнання
                             </p>
                         </li>
-                        <li class="fadeInUp wow" data-wow-duration="2s" data-aos="fade-up" data-aos-delay="100">
+                        <li data-aos="animScale" data-aos-delay="600">
                             <img src="img/svg/advantage_icon6.svg" alt="advantage icon">
                             <p>
                                 Наші співробітники щорічно
@@ -547,12 +544,12 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
-                            <div class="leaverequest__title fadeInUp wow" data-wow-duration="2.5s" data-aos="fade-up">
+                            <div class="leaverequest__title" data-aos="animUp">
                                 <h2 class="secttitle">
                                     Залиште заявку і ми звяжемося з вами протягом <span>20</span> хв.
                                 </h2>
                             </div>
-                            <div class="leaverequest__form fadeInUp wow" data-wow-duration="2.5s" data-aos="fade-up">
+                            <div class="leaverequest__form" data-aos="fade" data-aos-delay="200" data-aos-duration="1500">
                                 <form>
                                     <div class="leaverequest__form-row">
                                         <input type="text" placeholder="Як до вас звертатися?">
@@ -568,15 +565,15 @@
                 </div>
             </section>
 
-            <section class="video" data-aos="fade-up">
+            <section class="video">
                 <div class="container">
-                    <div class="video__title fadeInUp wow" data-wow-duration="2.5s">
+                    <div class="video__title" data-aos="animUp">
                         <h2 class="secttitle">
                             Подивіться наші відео
                         </h2>
                     </div>
                 </div>
-                <div class="swiper video__slider fadeIn wow" data-wow-duration="2.5s">
+                <div class="swiper video__slider" data-aos="animUp">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="video__slide">
@@ -628,17 +625,17 @@
                 </div>
             </section>
 
-            <section class="services" data-aos="fade-up">
+            <section class="services">
                 <div class="container">
-                    <div class="services__title fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50">
+                    <div class="services__title" data-aos="animUp">
                         <h2 class="secttitle">
                             Послуги для партнерів
                         </h2>
                     </div>
                     <div class="swiper services__slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
-                                <a href="b2b-page.html#corporateserv-1" class="services__item">
+                            <div class="swiper-slide">
+                                <a href="b2b-page.html#corporateserv-1" class="services__item" data-aos="animUp" data-aos-delay="200">
                                     <div class="services__item-img">
                                         <img src="img/services_img1.png" alt="image">
                                     </div>
@@ -653,11 +650,14 @@
                                             Комплексне рішення для виявлення, усунення та запобігання подальших появ
                                             шкідників.
                                         </p>
+                                        <span class="btn">
+                                            Дізнатись більше
+                                        </span>
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
-                                <a href="b2b-page.html#corporateserv-2" class="services__item">
+                            <div class="swiper-slide">
+                                <a href="b2b-page.html#corporateserv-2" class="services__item" data-aos="animScale" data-aos-delay="400">
                                     <div class="services__item-img">
                                         <img src="img/services_img2.png" alt="image">
                                     </div>
@@ -668,13 +668,16 @@
                                     </div>
                                     <div class="services__item-descr">
                                         <p>
-                                            Знищення усіх видів шкідників на підприємствах.
+                                            Знищення усіх видів<br> шкідників<br> на підприємствах.
                                         </p>
+                                        <span class="btn">
+                                            Дізнатись більше
+                                        </span>
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
-                                <a href="b2b-page.html#corporateserv-3" class="services__item">
+                            <div class="swiper-slide">
+                                <a href="b2b-page.html#corporateserv-3" class="services__item" data-aos="animScale" data-aos-delay="600">
                                     <div class="services__item-img">
                                         <img src="img/services_img3.png" alt="image">
                                     </div>
@@ -688,11 +691,14 @@
                                         <p>
                                             Запобігаємо пошкодженню продукції та забезпечуйте безпеку.
                                         </p>
+                                        <span class="btn">
+                                            Дізнатись більше
+                                        </span>
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide fadeInUp wow" data-wow-duration="2s" data-wow-offset="-50" data-aos="fade-up">
-                                <a href="b2b-page.html#corporateserv-4" class="services__item">
+                            <div class="swiper-slide">
+                                <a href="b2b-page.html#corporateserv-4" class="services__item" data-aos="animScale" data-aos-delay="800">
                                     <div class="services__item-img">
                                         <img src="img/services_img4.png" alt="image">
                                     </div>
@@ -706,6 +712,9 @@
                                         <p>
                                             Гарантуйте збереження ваших запасів з нашими послугами з фумігації.
                                         </p>
+                                        <span class="btn">
+                                            Дізнатись більше
+                                        </span>
                                     </div>
                                 </a>
                             </div>
@@ -716,81 +725,80 @@
 
             <section class="worklocation">
                 <div class="container">
-                    <div class="worklocation__title fadeInUp wow" data-wow-duration="1s" data-aos="fade-up">
+                    <div class="worklocation__title"data-aos="animUp">
                         <h2 class="secttitle">
                             Ми працюємо <span>по всій Україні</span>
                         </h2>
                     </div>
-                    <div class="worklocation__inner">
-                        <div class="worklocation__list">
-                            <h4 class="fadeInUp wow" data-wow-duration="1s" data-aos="fade-up">
+                    <div class="worklocation__inner" >
+                        <div class="worklocation__list" data-aos="fade" data-aos-delay="300" data-aos-duration="1500">
+                            <h4>
                                 На варті вашої безпеки в <span>20</span> областях України
                             </h4>
-                            <ul data-aos="fade-up">
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                            <ul>
+                                <li>
                                     Одеська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Дніпропетровська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Чернігівська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Харківська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Житомирська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Полтавська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Херсонська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Київська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Запорізька область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Вінницька область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Сумська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Кіровоградська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Львіська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Черкаська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Хмельницька область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Рівненська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Волинська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Івано-Франківська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Тернопільська область
                                 </li>
-                                <li class="fadeInUp wow" data-wow-duration="2s">
+                                <li>
                                     Чернівецька область
                                 </li>
                             </ul>
                         </div>
-                        <div class="worklocation__map fadeIn wow" data-wow-delay=".5s" data-wow-duration="3s"
-                            data-wow-offset="50" data-aos="fade-up" data-aos-delay="300">
+                        <div class="worklocation__map" data-aos="fade" data-aos-delay="600" data-aos-duration="1500">
                             <img src="img/svg/map.svg" alt="image">
                         </div>
                     </div>
@@ -801,12 +809,12 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
-                            <div class="leaverequest__title fadeInUp wow" data-wow-duration="2.5s" data-aos="fade-up">
+                            <div class="leaverequest__title" data-aos="animUp">
                                 <h2 class="secttitle">
                                     Залиште заявку і ми звяжемося з вами протягом <span>20</span> хв.
                                 </h2>
                             </div>
-                            <div class="leaverequest__form fadeInUp wow" data-wow-duration="2.5s" data-aos="fade-up">
+                            <div class="leaverequest__form" data-aos="fade" data-aos-delay="200" data-aos-duration="1500">
                                 <form>
                                     <div class="leaverequest__form-row">
                                         <input type="text" placeholder="Як до вас звертатися?">
@@ -824,7 +832,7 @@
 
             <!-- <section class="googlereviews">
                 <div class="container">
-                    <div class="googlereviews__title">
+                    <div class="googlereviews__title" data-aos="animUp">
                         <h2 class="secttitle">
                             Відгуки про нашу компанію
                         </h2>
@@ -844,17 +852,21 @@
 
             <section class="faq">
                 <div class="container">
-                    <div class="faq__title fadeInUp wow" data-wow-duration="2s"  data-aos="fade">
+                    <div class="faq__title" data-aos="animUp">
                         <h2 class="secttitle">
                             Відповіді на поширені запитання
                         </h2>
                     </div>
-                    <div class="faq__inner fadeIn wow" data-wow-duration="2s" data-wow-delay=".5s" data-aos="fade">
+                    <div class="faq__inner" data-aos="fade" data-aos-delay="300" data-aos-duratin="1500">
                         <img src="img/svg/faq-frame1.svg" alt="frame" class="faq-frame-top">
                         <img src="img/svg/faq-frame2.svg" alt="frame" class="faq-frame-bottom">
                         <div class="faq__row">
                             <div class="faq__row-head">
                                 Як підготуватись до обробки?
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 40)" fill="#FFD300"/>
+                                    <path d="M12.34 17.1705L19.9996 24.8301L27.6592 17.1705" stroke="black" stroke-width="3"/>
+                                </svg>                                    
                             </div>
                             <div class="faq__row-body">
                                 <ol>
@@ -881,6 +893,10 @@
                         <div class="faq__row">
                             <div class="faq__row-head">
                                 Чому не варто боротись з шкідниками своїми силами?
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 40)" fill="#FFD300"/>
+                                    <path d="M12.34 17.1705L19.9996 24.8301L27.6592 17.1705" stroke="black" stroke-width="3"/>
+                                </svg>                                    
                             </div>
                             <div class="faq__row-body">
                                 <p>
@@ -894,6 +910,10 @@
                         <div class="faq__row">
                             <div class="faq__row-head">
                                 Скільки часу займає обробка?
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 40)" fill="#FFD300"/>
+                                    <path d="M12.34 17.1705L19.9996 24.8301L27.6592 17.1705" stroke="black" stroke-width="3"/>
+                                </svg>                                    
                             </div>
                             <div class="faq__row-body">
                                 <p>
@@ -905,6 +925,10 @@
                         <div class="faq__row">
                             <div class="faq__row-head">
                                 Чи не шкідливо для здоров’я і як довго залишається запах?
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 40)" fill="#FFD300"/>
+                                    <path d="M12.34 17.1705L19.9996 24.8301L27.6592 17.1705" stroke="black" stroke-width="3"/>
+                                </svg>                                    
                             </div>
                             <div class="faq__row-body">
                                 <p>
@@ -918,6 +942,10 @@
                         <div class="faq__row">
                             <div class="faq__row-head">
                                 А якщо не допоможе?
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 40)" fill="#FFD300"/>
+                                    <path d="M12.34 17.1705L19.9996 24.8301L27.6592 17.1705" stroke="black" stroke-width="3"/>
+                                </svg>                                    
                             </div>
                             <div class="faq__row-body">
                                 <p>
@@ -928,7 +956,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="faq__btn fadeIn wow" data-wow-duration="2.5s" data-wow-delay=".5s" data-aos="fade">
+                    <div class="faq__btn" data-aos="animScale" data-aos-delay="400">
                         <a href="#question-popup" class="red-btn modal-btn">
                             задати своє питання
                         </a>
@@ -1176,7 +1204,7 @@
 
                 <!-- STEP 1 -->
 
-                <div class="quiz-step quiz-step-1">
+                <!-- <div class="quiz-step quiz-step-1">
                     <div class="quiz-progress">
                         <img src="img/quiz_progress.png" alt="progress">
                     </div>
@@ -1237,7 +1265,7 @@
                             </svg>                            
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- STEP 2 -->
 
@@ -1284,11 +1312,11 @@
                             </svg>
                         </button>
                     </div>
-                </div>   -->
+                </div> -->
 
                 <!-- STEP 3(1) -->
 
-                <!-- <div class="quiz-step quiz-step-3">
+                <div class="quiz-step quiz-step-3">
                     <div class="quiz-progress">
                         <img src="img/quiz_progress50.png" alt="progress">
                     </div>
@@ -1352,7 +1380,7 @@
                             </svg>
                         </button>
                     </div>
-                </div>   -->
+                </div>
 
                 <!-- STEP 3(2) -->
 
@@ -1553,7 +1581,6 @@
     </div>
 
     <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/wow.min.js"></script>
     <script src="js/lib/jquery.magnific-popup.min.js"></script>
     <script src="js/lib/lightcase.js"></script>
     <script src="js/lib/jquery.maskedinput.min.js"></script>

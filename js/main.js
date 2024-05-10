@@ -254,7 +254,7 @@ $(document).ready(function () {
     // new WOW().init();
     AOS.init({
         once: true,
-        duration: 1200,
+        duration: 1100,
         easing: 'ease-out-quad',
         offset: -10,
     });
