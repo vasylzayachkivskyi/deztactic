@@ -109,6 +109,10 @@
     }
 }
 
+.heroscreen__inner-btn{
+    width: fit-content;
+}
+
 .heroscreen__image {
     position: absolute;
     top: 0;
@@ -699,7 +703,7 @@
         transition: .4s ease;
         &:hover{
             .video-poster{
-                filter: brightness(90%);
+                filter: brightness(80%);
             }
             .video-play{
                 transform: translate(-50%, -50%) scale(1.1);
@@ -757,6 +761,7 @@
     &:hover {
         .services__item-img img {
             transform: scale(1.15);
+            filter: brightness(70%);
         }
 
         .services__item-descr .btn:after {

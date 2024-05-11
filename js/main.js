@@ -45,7 +45,6 @@ $(document).ready(function () {
     // parasites slider
     if ($('.parasites__slider').length) {
 
-
         var swiper = new Swiper(".parasites__slider", {
             slidesPerView: 2.5,
             speed: 700,
@@ -230,6 +229,7 @@ $(document).ready(function () {
         maxHeight: 1500
     });
 
+
     // input mask
     $('.phone-input').mask('+38 (999) 999-99-99', {
         onBeforeMask: function (t, e) { return t.replace(/^38/g, '') },
@@ -251,18 +251,12 @@ $(document).ready(function () {
     });
 
 
-    // new WOW().init();
-    AOS.init({
-        once: true,
-        duration: 1100,
-        easing: 'ease-out-quad',
-        offset: -10,
-    });
-
+    // custom select
     if ($('select').length) {
         $('select').styler();
     }
 
+    // modal popup
     if ($('.modal-btn').length) {
         $('.modal-btn').magnificPopup({
             type: 'inline',
@@ -277,45 +271,7 @@ $(document).ready(function () {
         });
     }
 
-
-    $('.form').submit(function () {
-        var th = $(this);
-        $.ajax({
-            type: 'POST',
-            url: 'mail-a.php',
-            data: th.serialize()
-        }).done(function () {
-            $('.request-form-success').css('z-index', '10');
-            $('.request-form-success').css('opacity', '1');
-            setTimeout(function () {
-                $('.request-form-success').css('z-index', '-1');
-                $('.request-form-success').css('opacity', '0');
-                $.magnificPopup.close();
-                th.trigger('reset');
-            }, 3000);
-        });
-        return false;
-    });
-
-    $('.question-form').submit(function () {
-        var th = $(this);
-        $.ajax({
-            type: 'POST',
-            url: 'mail-b.php',
-            data: th.serialize()
-        }).done(function () {
-            $('.request-form-success').css('z-index', '10');
-            $('.request-form-success').css('opacity', '1');
-            setTimeout(function () {
-                $('.request-form-success').css('z-index', '-1');
-                $('.request-form-success').css('opacity', '0');
-                $.magnificPopup.close();
-                th.trigger('reset');
-            }, 3000);
-        });
-        return false;
-    });
-
+    // area slider
     if ($('.area-slider').length) {
         var initialValue = 70;
         var sliderTooltip = function (event, ui) {
@@ -333,5 +289,13 @@ $(document).ready(function () {
             slide: sliderTooltip,
         });
     }
+
+    // animation
+    AOS.init({
+        once: true,
+        duration: 1100,
+        easing: 'ease-out-quad',
+        offset: -10,
+    });
 
 });
