@@ -8,6 +8,13 @@
     top: 0;
     right: 0;
     z-index: 50;
+
+    &.dark {
+        background-color: #1F1F21;
+        .header-mnu-drop-list{
+            background-color: #1F1F21;
+        }
+    }
 }
 
 .header-wrapper {
@@ -419,9 +426,11 @@
         width: 16px;
         height: 16px;
     }
+
     .header-phone {
         font-size: 12px;
     }
+
     .header-contacts {
         margin-right: 15px;
     }
