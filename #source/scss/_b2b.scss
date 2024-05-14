@@ -611,7 +611,6 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
     &.active {
         img{
-            filter: brightness(80%);
             transform: scale(1.1);
         }
     }
