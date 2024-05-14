@@ -312,6 +312,15 @@
                     width: calc(100% - 40px);
                 }
             }
+
+            &.small-width{
+                max-width: 700px;
+                padding-left: 40px;
+                justify-content: space-around;
+                .radio-label{
+                    width: 31%;
+                }
+            }
         }
 
         .quiz-progress {
@@ -319,6 +328,7 @@
             width: 100%;
             margin: 0 auto 50px;
         }
+
 
         .quiz-btn-prev {
             transition: .4s ease;
@@ -343,6 +353,13 @@
                 }
             }
         }
+
+        .quiz-step{
+            justify-content: space-between;
+        }
+        .quiz-button{
+            margin: 0;
+        }
     }
 }
 
@@ -361,6 +378,9 @@
 .quiz-step {
     text-align: center;
     padding: 52px 20px 65px;
+    height: 701px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -371,6 +391,7 @@
 
 .quiz-button {
     text-align: center;
+    margin: auto 0 0;
 
     svg {
         margin-left: 13px;
@@ -398,13 +419,6 @@
     justify-content: flex-end;
 }
 
-.quiz-step-4 .checkbox-label {
-    width: 50%;
-}
-
-.quiz-step-5 .quiz-step-text {
-    padding-bottom: 50px;
-}
 
 .quiz-choose-wrapper {
     display: flex;
@@ -449,26 +463,6 @@
     width: 48%;
 }
 
-.quiz-thanks {
-    height: 595px;
-    text-align: center;
-    padding: 100px 100px 150px;
-}
-
-.quiz-thanks-title {
-    margin-top: 50px;
-    font-size: 40px;
-    font-family: "Play", sans-serif;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.quiz-thanks-text {
-    font-size: 18px;
-    color: #CACACA;
-    line-height: 1.5;
-}
 
 .quiz-personal-info {
     font-size: 15px;
@@ -501,6 +495,7 @@
 .quiz-btns {
     display: flex;
     justify-content: center;
+    margin: auto 0 0;
 }
 
 .quiz-btn-prev {
@@ -606,7 +601,7 @@
 }
 
 .radio-label {
-    width: 50%;
+    width: 33%;
     display: flex;
     align-items: center;
     text-align: left;
@@ -655,13 +650,13 @@
     .quiz-choose-wrapper {
         max-width: 300px;
         width: 100%;
-        margin: 0 auto 88px;
+        margin: 0 auto 0px;
     }
 }
 
 .quiz-step-3 {
     .radio-label {
-        width: 33%;
+        width: 30%;
     }
 
 
@@ -669,7 +664,7 @@
         max-width: 700px;
         justify-content: space-between;
         width: 100%;
-        margin: 0 auto 0;
+        margin: 0 auto 20px;
     }
 }
 
@@ -714,7 +709,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .area-slider-info-value {
@@ -725,7 +720,8 @@
 
 .area-slider-wrapper {
     max-width: 700px;
-    margin: 30px auto;
+    width: 100%;
+    margin: 30px auto 20px;
 }
 
 .tooltip {
@@ -778,7 +774,7 @@
 }
 
 .ui-widget-content {
-    background-color: #CACACA;
+    background-color: #272729;
 }
 
 .ui-widget-header {
@@ -875,11 +871,18 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 @media (max-width:767.8px) {
+
+    .quiz-step{
+        height: auto;
+        min-height: 600px;
+    }
+
+    .quiz.dark .quiz-choose-wrapper.small-width .radio-label {
+        width: 45%;
+    }
     .quiz.dark .quiz-choose-wrapper.pl {
-        justify-content: center;
 
         .radio-label {
-            width: 100%;
             max-width: 400px;
         }
     }
@@ -927,11 +930,12 @@ html .ui-button.ui-state-disabled:hover {
 
     .checkbox-label {
         width: 50%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .radio-label {
-        margin-bottom: 30px;
+        width: 50%;
+        margin-bottom: 20px;
     }
 
     .quiz-choose-wrapper {
@@ -939,7 +943,7 @@ html .ui-button.ui-state-disabled:hover {
     }
 
     .quiz.dark .quiz-choose-wrapper.pl .radio-text {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .radio-text {
@@ -980,6 +984,22 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 @media (max-width:575.8px) {
+    .quiz.dark .quiz-choose-wrapper.small-width {
+        padding-left: 0;
+    }
+    .quiz-step{
+        height: auto;
+        min-height: 500px;
+    }
+    .quiz.dark .quiz-choose-wrapper.pl .radio-label {
+        width: 100%;
+    }
+    .quiz-progress {
+        margin: 0 auto 50px;
+    }
+    .quiz-step-title {
+        margin-bottom: 30px;
+    }
     .quiz-btn {
         padding: 5px 18px;
     }
