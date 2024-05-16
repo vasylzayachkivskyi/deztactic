@@ -46,6 +46,7 @@
 .features.dark {
     background-color: #1F1F21;
     color: #fff;
+
     .features__item-icon img {
         width: 134px;
         height: 134px;
@@ -227,7 +228,8 @@
 .advantages.dark {
     background-color: #272729;
     color: #fff;
-    .award{
+
+    .award {
         width: 170px;
         height: 170px;
         background-size: cover;
@@ -236,6 +238,7 @@
         position: absolute;
         z-index: 4;
     }
+
     .advantages__img {
         width: 37%;
     }
@@ -351,6 +354,7 @@
 
 .clients__marquee {
     background: #fff;
+
     .swiper-wrapper {
         transition-timing-function: linear !important;
     }
@@ -373,9 +377,10 @@
 }
 
 // ------------ === certificates section === ---------------- //
-#lightcase-info{
-    display: none!important;
+#lightcase-info {
+    display: none !important;
 }
+
 .certificates {
     background-color: #1F1F21;
     padding: 60px 0 65px;
@@ -438,7 +443,8 @@
         svg {
             width: 22px;
             background-size: cover;
-            path{
+
+            path {
                 transition: .3s ease;
             }
         }
@@ -452,7 +458,8 @@
                     left: 0;
                 }
             }
-            svg path{
+
+            svg path {
                 fill: #FFD300;
             }
         }
@@ -541,6 +548,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
     }
 }
 
+.comand__phones {
+    display: none;
+}
+
 .comand__tabs {
     margin-bottom: 50px;
     position: relative;
@@ -606,12 +617,41 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
 .comand__item {
     width: calc(25% - 32px);
-    height: 387px;
-    overflow: hidden;
+
+    .photo {
+        overflow: hidden;
+        height: 387px;
+    }
+
+    .red-btn {
+        margin-top: 30px;
+        font-size: 19px;
+        width: 100%;
+        padding: 10px 20px;
+        height: 61px;
+        text-transform: initial;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transform: translateY(-10px);
+        min-width: auto;
+        text-align: center;
+    }
+
+    .info {
+        display: none;
+    }
 
     &.active {
-        img{
+        img {
             transform: scale(1.1);
+        }
+
+        .red-btn {
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+            transform: translateY(0px);
         }
     }
 
@@ -647,12 +687,14 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
         width: 120px;
         height: 120px;
     }
+
     .advantages.dark .award {
         width: 130px;
         height: 130px;
         top: 5px;
         right: 5px;
     }
+
     .advantages.dark .advantages__inner {
         row-gap: 50px;
 
@@ -676,15 +718,21 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 1399.8px) {
-    .advantages.dark{
+    .comand__item.active .red-btn {
+        font-size: 16px;
+    }
+
+    .advantages.dark {
         padding: 50px 0;
     }
+
     .advantages.dark .award {
         width: 110px;
         height: 110px;
         top: 5px;
         right: 5px;
     }
+
     .certificates__slide {
         max-width: 460px;
     }
@@ -750,7 +798,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
     .comand__item {
         width: calc(25% - 19px);
-        height: 350px;
+
+        .photo {
+            height: 350px;
+        }
     }
 
     .partners__item {
@@ -773,12 +824,18 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 1199.8px) {
+
+    .comand__item .red-btn {
+        height: 55px;
+    }
+
     .advantages.dark .award {
         width: 90px;
         height: 90px;
         top: 0;
         right: 0;
     }
+
     .certificates__names .name-row {
         height: 60px;
         padding-right: 30px;
@@ -808,7 +865,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
     .comand__item {
         width: calc(25% - 12px);
-        height: 320px;
+
+        .photo {
+            height: 320px;
+        }
     }
 
     .comand__inner {
@@ -817,12 +877,106 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 991.8px) {
+    .comand__phones {
+        display: block;
+        position: relative;
+        height: 45px;
+        margin-top: 25px;
+
+        .phone {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+            transition: .3s;
+
+            &.active {
+                opacity: 1;
+                z-index: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .comand__tabs {
+        display: none;
+    }
+
+    .comand__item .red-btn {
+        display: none;
+    }
+
+    .comand__item {
+        .info {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1F1F21;
+            padding: 12px 12px 12px 30px;
+            color: #fff;
+            opacity: 0;
+            z-index: -1;
+            visibility: hidden;
+            transition: .3s;
+            transform: translateY(10px);
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15px;
+                width: 2px;
+                height: 65%;
+                background-color: #FFD500;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 100%;
+                font-weight: 800;
+                margin: 0;
+            }
+
+            span {
+                font-size: 600px;
+                font-size: 12px;
+                line-height: 100%;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+
+        img {
+            filter: brightness(60%);
+        }
+
+        &.active {
+            img {
+                filter: brightness(100%);
+            }
+
+            .info {
+                opacity: 1;
+                z-index: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+        }
+    }
+
     .advantages.dark .award {
         width: 130px;
         height: 130px;
         top: initial;
         right: calc((100vw / 2) - 340px);
     }
+
     .certificates__title {
         margin-bottom: 30px;
     }
@@ -932,7 +1086,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
     .comand__item {
         width: calc(50% - 10px);
-        height: 360px;
+
+        .photo {
+            height: 380px;
+        }
     }
 
     .comand__inner {
@@ -968,6 +1125,7 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
         width: 100px;
         height: 100px;
     }
+
     .advantages.dark .award {
         width: 130px;
         height: 130px;
@@ -1020,7 +1178,7 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
         padding-right: 20px;
     }
 
-    .comand__item {
+    .comand__item .photo {
         height: 320px;
     }
 
@@ -1046,11 +1204,20 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 575.8px) {
+    .comand__item .info p {
+        font-size: 14px;
+    }
+
+    .comand__item .info span {
+        font-size: 11px;
+    }
+
     .advantages.dark .award {
         width: 90px;
         height: 90px;
         right: 0px;
     }
+
     .certificates__names {
         padding-right: 12px;
     }
@@ -1129,7 +1296,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 
     .comand__item {
         width: calc(50% - 6px);
-        height: 60vw;
+
+        .photo {
+            height: 60vw;
+        }
     }
 
     .comand {
@@ -1202,14 +1372,33 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
 }
 
 @media (max-width: 424.8px) {
+    .comand__item .info {
+        padding: 8px 8px 8px 20px;
+    }
+
+    .comand__item .info:before {
+        left: 8px;
+        height: 24px;
+    }
+
+    .comand__item .info p {
+        font-size: 12px;
+    }
+
+    .comand__item .info span {
+        font-size: 9px;
+    }
+
     .features.dark .features__item-icon img {
         width: 70px;
         height: 70px;
     }
+
     .advantages.dark .award {
         width: 75px;
         height: 75px;
     }
+
     .certificates__slide {
         max-width: 240px;
     }
@@ -1232,8 +1421,12 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
     }
 
     .certificates__names .name-row p {
-        font-size: 12px;
+        font-size: 13px;
         padding: 10px 20px 10px 12px;
+    }
+
+    .certificates__names .name-row svg {
+        width: 17px;
     }
 
     .clients__marquee .swiper-slide img {

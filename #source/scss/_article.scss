@@ -53,7 +53,6 @@ article {
     }
 
     a {
-        color: #FFD500;
         font-weight: 600;
         position: relative;
         transition: .3s;
@@ -64,6 +63,7 @@ article {
 
         &.btn-arrow {
             color: #272729;
+            font-weight: 700;
             padding-right: 45px;
             display: block;
             width: fit-content;
@@ -95,7 +95,6 @@ article {
         }
 
         &:hover {
-            color: #FFD500;
             opacity: 0.6;
         }
     }
@@ -715,6 +714,8 @@ article {
         max-width: 400px;
         margin: 0 auto 40px;
         width: 100%;
+        position: relative;
+        z-index: 99;
 
         .jq-selectbox {
             border: 1px solid #000;
@@ -847,7 +848,9 @@ article {
     .articlesect article {
         img {
             float: none !important;
-            margin: 20px auto;
+            margin: 25px auto;
+            padding: 0!important;
+            width: 100%;
         }
     }
 
@@ -879,7 +882,7 @@ article {
     }
 
     .article__wrapper li {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .article__aside h2 {
@@ -912,7 +915,7 @@ article {
 
     article {
         line-height: 130%;
-        font-size: 15px;
+        font-size: 14px;
 
         h2 {
             font-size: 22px;

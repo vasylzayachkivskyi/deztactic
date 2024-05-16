@@ -1,7 +1,8 @@
 .footer {
     padding: 60px 0 60px;
     background-color: #272729;
-    &.dark{
+
+    &.dark {
         background-color: #1F1F21;
     }
 }
@@ -67,7 +68,8 @@
         margin-right: 11px;
     }
 }
-.footer__email{
+
+.footer__email {
     margin-bottom: 11px;
 }
 
@@ -166,7 +168,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .footer__socials{
+
+    .footer__socials {
         width: 100%;
     }
 
@@ -237,7 +240,7 @@
 
     .footer__email,
     .footer__phone {
-        a{
+        a {
             font-size: 16px;
         }
 
@@ -253,43 +256,57 @@
     .footer {
         padding: 30px 0 0px;
     }
+
     .footer__logo img {
         width: 120px;
     }
-    
+
     .footer__email,
     .footer__phone {
-        a{
+        a {
             font-size: 13px;
         }
+
         img {
             width: 20px;
             height: 20px;
         }
     }
+
     .footer__socials {
         width: 100%;
+
+        li+li {
+            margin-left: 0px;
+        }
 
         ul {
             justify-content: space-between;
         }
-        svg{
-            width: 39px;
-            height: 39px;
+
+        svg {
+            width: 50px;
+            height: 50px;
         }
     }
+
     .footer__nav-title {
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 15px;
     }
+
     .footer__nav-col a {
         font-size: 13px;
+        font-weight: 500;
     }
+
     .footer__nav-col li {
         margin-bottom: 12px;
     }
+
     .footer__copy-mobile {
         padding: 10px 0 0;
+
         p {
             font-size: 9px;
         }

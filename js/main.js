@@ -146,9 +146,11 @@ $(document).ready(function () {
     $('.comand__item').hover(function () {
         var indexItem = $(this).attr('data-item');
         $('.comand__tabs .name').removeClass('active');
+        $('.comand__phones .phone').removeClass('active');
         $('.comand__item').removeClass('active');
         $(this).addClass('active');
         $('#' + indexItem).addClass('active');
+        $('#phone-' + indexItem).addClass('active');
     });
 
     // clients marquee

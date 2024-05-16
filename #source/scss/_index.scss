@@ -831,7 +831,7 @@
         text-underline-offset: 4px;
         transition: .3s ease;
         position: relative;
-        font-weight: 600;
+        font-weight: 700;
         padding-left: 25px;
 
         &:after {
@@ -1977,7 +1977,8 @@
     }
 
     .faq__row-head {
-        font-size: 15px;
+        font-size: 14px;
+        padding-right: 45px;
     }
 
     .faq__row-head:after {
@@ -1989,7 +1990,8 @@
 
         p,
         li {
-            font-size: 13px;
+            font-size: 12px;
+            font-weight: 400;
         }
 
         padding: 0px 10px 10px;
