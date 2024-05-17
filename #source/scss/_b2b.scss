@@ -910,6 +910,13 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
     }
 
     .comand__item {
+        width: calc(50% - 10px);
+        overflow: hidden;
+
+        .photo {
+            height: 380px;
+        }
+
         .info {
             display: block;
             position: absolute;
@@ -922,7 +929,7 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
             opacity: 0;
             z-index: -1;
             visibility: hidden;
-            transition: .3s;
+            transition: .5s;
             transform: translateY(10px);
 
             &:before {
@@ -1084,13 +1091,6 @@ a[class*='lightcase-icon-'].lightcase-icon-next {
         padding: 40px 0 50px;
     }
 
-    .comand__item {
-        width: calc(50% - 10px);
-
-        .photo {
-            height: 380px;
-        }
-    }
 
     .comand__inner {
         gap: 20px;
