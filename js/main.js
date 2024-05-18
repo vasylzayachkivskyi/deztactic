@@ -104,10 +104,11 @@ $(document).ready(function () {
             spaceBetween: 10,
             speed: 700,
             breakpoints: {
-                500: {
+                530: {
                     slidesPerView: 2.1,
                 },
-                650: {
+              
+                600: {
                     slidesPerView: 2.3,
                 },
                 768: {

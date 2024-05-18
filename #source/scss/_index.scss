@@ -1852,6 +1852,12 @@
         padding-left: 12px;
     }
 
+    .services__item-img {
+        height: 240px;
+        img{
+            transform: scale(1.01);
+        }
+    }
 
     .advantages__inner li img {
         width: 45px;
@@ -2049,6 +2055,10 @@
 
     .services__item-descr .btn {
         font-size: 10px;
+    }
+
+    .services__item-img {
+        height: 205px;
     }
 
     .services__item-descr {
