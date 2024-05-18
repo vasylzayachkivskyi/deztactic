@@ -132,12 +132,25 @@
     .thankspage__wrapper h1 {
         font-size: 36px;
     }
+    .thankspage__wrapper:after{
+        width: 28px;
+        height: 28px;
+    }
+    .thankspage__wrapper p:after{
+        width: 14px;
+        height: 14px;
+    }
+    .thankspage__wrapper:before{
+        width: 10px;
+        height: 10px;
+    }
+    .thankspage__wrapper p:before{
+        width: 25px;
+        height: 25px;
+    }
 
     .thankspage__wrapper h1:after {
-        top: -15px;
-        left: 0px;
-        width: 30px;
-        height: 30px;
+      display: none;
     }
 
     .thankspage__buttons a img {

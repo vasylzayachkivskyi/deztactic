@@ -255,15 +255,28 @@ article {
     width: calc(33.33% - 27px);
     height: 494px;
     background-color: #F4F4F4;
+
+    &:hover {
+        .more-btn:after {
+            right: -10px;
+        }
+
+        .archive__item-icon img {
+            transform: scale(1.15);
+            filter: brightness(70%);
+        }
+    }
 }
 
 .archive__item-icon {
     width: 100%;
     height: 244px;
+    overflow: hidden;
 
     img {
         width: 100%;
         height: 100%;
+        transition: .4s ease;
         object-fit: cover;
     }
 }
@@ -308,7 +321,7 @@ article {
     .more-btn {
         color: #272729;
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 150%;
         position: relative;
         padding-right: 33px;
@@ -324,12 +337,9 @@ article {
             background-size: cover;
             right: 0;
             top: 50%;
+            transition: 0.3s;
             transform: translateY(-50%);
             background-image: url(../img/svg/btn-arrow.svg);
-        }
-
-        &:hover {
-            opacity: 0.6;
         }
     }
 
@@ -849,7 +859,7 @@ article {
         img {
             float: none !important;
             margin: 25px auto;
-            padding: 0!important;
+            padding: 0 !important;
             width: 100%;
         }
     }
@@ -908,13 +918,13 @@ article {
     }
 
     .articlesect {
-        line-height: 130%;
+        line-height: 140%;
         font-size: 15px;
         padding: 30px 0 40px;
     }
 
     article {
-        line-height: 130%;
+        line-height: 140%;
         font-size: 14px;
 
         h2 {
