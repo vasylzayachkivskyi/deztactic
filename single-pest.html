@@ -142,7 +142,7 @@
                                     безпечних засобів та технологій.
                                 </p>
                                 <div class="heroscreen__inner-btn" data-aos="animScale" data-aos-delay="400">
-                                    <a href="#" class="red-btn modal-btn">розрахувати вартість</a>
+                                    <a href="#quiz-pest" class="red-btn modal-btn">розрахувати вартість</a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="heropest__right-btn">
-                                    <a href="#" class="red-btn">
+                                    <a href="#quiz-pest" class="red-btn modal-btn">
                                         розрахувати вартість
                                     </a>
                                 </div>
@@ -931,6 +931,142 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup">
+
+            <div class="request-popup zoom-anim-dialog" id="request-popup">
+                <h3 class="request-popup-title secttitle">
+                    Залиште контакти і ми звяжемося <br> з вами протягом <span>20</span> хв.
+                </h3>
+                <form action="mail-a.php" method="POST" class="request-popup-form form">
+                    <input type="hidden" name="type" value="Главный экран">
+                    <input class="request-popup-form-input" type="text" name="name" placeholder="Як до вас звертатися?">
+                    <input class="request-popup-form-input phone-input" type="tel" name="phone" placeholder="+38"
+                        required>
+                    <input class="request-popup-form-btn c-btn red-btn" type="submit" value="Залишити заявку">
+                </form>
+            </div>
+
+            <div class="question-popup zoom-anim-dialog" id="question-popup">
+                <h3 class="question-popup-title secttitle">Задайте запитання і ми звяжемося з вами протягом 20 хв.</h3>
+                <form action="mail-b.php" method="POST" class="question-popup-form question-form">
+                    <input type="hidden" name="type" value="Вопрос">
+                    <div class="question-popup-form-input-wrapper">
+                        <input class="question-popup-form-input" type="text" name="name"
+                            placeholder="Як до вас звертатися?">
+                        <input class="question-popup-form-input phone-input" type="tel" name="phone" placeholder="+38"
+                            required>
+                    </div>
+                    <textarea class="question-popup-form-textarea" name="question" placeholder="Ваше запитання"
+                        required></textarea>
+                    <div class="question-popup-form-bottom">
+                        <input class="question-popup-form-btn c-btn red-btn" type="submit" value="Задати запитання">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz zoom-anim-dialog" id="quiz-pest">
+
+                <!-- STEP 1 -->
+
+
+                <div class="quiz-step quiz-step-3">
+                    <div class="quiz-progress">
+                        <img src="img/quiz_progress50.png" alt="progress">
+                    </div>
+                    <h4 class="quiz-step-title secttitle">Що необхідно обробити?</h4>
+                    <div class="quiz-choose-wrapper custom-width">
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Квартира">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Квартира</span>
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Приватний будинок">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Приватний будинок</span>
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Кухня/Кімната">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Кухня/Кімната</span>
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Гуртожиток">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Гуртожиток</span>
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Присадибна ділянка">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Присадибна ділянка</span>
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio" type="radio" name="where" value="Інше">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Інше</span>
+                        </label>
+                    </div>
+                    <div class="area-slider-wrapper">
+                        <div class="area-slider"></div>
+                        <div class="area-slider-info">
+                            <div class="area-slider-info-value">10 м<sup>2</sup></div>
+                            <div class="area-slider-info-value">1000 м<sup>2</sup></div>
+                        </div>
+                    </div>
+                    <a href="#" class="quiz-btn-prev c-btn">
+                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="55" height="55" fill="#272729" />
+                            <path
+                                d="M37.8698 29.3851L21.6045 29.3851L27.9219 35.8403L25.9369 37.8687L16.2305 27.9506L25.9369 18.0326L27.9219 20.061L21.6045 26.5161L37.8698 26.5161L37.8698 29.3851Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <div class="quiz-btns">
+                        <button type="button" class="quiz-btn-next red-btn">
+                            Наступний крок
+                            <svg width="25" height="22" viewBox="0 0 25 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.269684 9.40903L18.7027 9.40903L11.5433 2.24964L13.793 1.31174e-07L24.793 11L13.793 22L11.5433 19.7504L18.7027 12.591L0.269684 12.591L0.269684 9.40903Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div> 
+
+              
+                <!-- STEP LAST -->
+                <!-- <div class="quiz-step quiz-step-last">
+                    <div class="quiz-progress">
+                        <img src="img/quiz_progress75.png" alt="progress">
+                    </div>
+                    <h4 class="quiz-step-title secttitle">Залиште свій телефон і менеджер<br>зв’яжеться з вами</h4>
+                    <div class="quiz-last">
+                        <div class="quiz-last-input-wrapper">
+                            <input class="quiz-input phone-input" type="tel" name="phone" placeholder="+38" required>
+                            <input class="quiz-input" type="text" name="name" placeholder="Як до вас звертатися?" required>
+                        </div>
+                        <a href="#" class="quiz-btn-prev c-btn">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="55" height="55" fill="#272729" />
+                                <path
+                                    d="M37.8698 29.3851L21.6045 29.3851L27.9219 35.8403L25.9369 37.8687L16.2305 27.9506L25.9369 18.0326L27.9219 20.061L21.6045 26.5161L37.8698 26.5161L37.8698 29.3851Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <p class="quiz-personal-info">Натискаючи на кнопку, ви даєте згоду на обробку своїх персональних
+                            даних та погоджуєтеся з <a href="#">Угодою користувача</a></p>
+                        <input class="quiz-btn c-btn red-btn" type="submit" value="Дізнатися вартість">
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
     </div>
 
     <script src="js/lib/jquery.js"></script>

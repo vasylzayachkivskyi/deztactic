@@ -232,10 +232,12 @@ body {
     }
 
     .red-btn {
-        width: 100%;
         height: 45px;
         padding: 5px 20px;
         font-size: 12px;
+        min-width: 288px;
+        max-width: 288px;
+        width: 100%;
 
         svg {
             width: 18px;
@@ -260,12 +262,6 @@ body {
 
     * {
         scroll-margin-top: 80px;
-    }
-
-    .red-btn {
-        min-width: 288px;
-        max-width: 288px;
-        width: 100%;
     }
 
     .secttitle {
