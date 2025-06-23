@@ -109,7 +109,7 @@
     }
 }
 
-.heroscreen__inner-btn{
+.heroscreen__inner-btn {
     width: fit-content;
 }
 
@@ -273,13 +273,16 @@
 }
 
 .parasites__slide {
-    user-select: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
 
     a {
         text-align: center;
         position: relative;
         display: inline-block;
     }
+
 
     .hover-el {
         position: absolute;
@@ -701,11 +704,13 @@
         height: 100%;
         position: relative;
         transition: .4s ease;
-        &:hover{
-            .video-poster{
+
+        &:hover {
+            .video-poster {
                 filter: brightness(80%);
             }
-            .video-play{
+
+            .video-play {
                 transform: translate(-50%, -50%) scale(1.1);
             }
         }
@@ -717,6 +722,13 @@
         height: 100%;
         object-fit: cover;
         transition: .3s ease;
+    }
+
+    .video-poster {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-position: left;
     }
 
     .video-play {
@@ -784,12 +796,12 @@
 }
 
 .services__item-title {
-    padding: 16px 46px 15px;
+    padding: 16px 26px 15px;
     height: 75px;
     background-color: #272729;
 
     h3 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
         line-height: 120%;
         color: #fff;
@@ -880,6 +892,11 @@
         font-size: 23px;
         font-weight: 700;
         line-height: 120%;
+
+        span {
+            text-decoration: underline 3px #FFD300;
+            text-underline-offset: 6px;
+        }
     }
 
     ul {
@@ -892,6 +909,7 @@
             font-size: 18px;
             font-weight: 700;
             line-height: 220%;
+            white-space: nowrap;
 
         }
     }
@@ -996,10 +1014,12 @@
     &.active {
         .faq__row-head svg {
             transform: rotate(180deg);
-            rect{
+
+            rect {
                 fill: black;
             }
-            path{
+
+            path {
                 stroke: #FFD300;
             }
         }
@@ -1024,8 +1044,9 @@
         height: 40px;
         background-size: cover;
         transition: .3s ease;
+
         rect,
-        path{
+        path {
             transition: .3s ease;
         }
     }
@@ -1209,6 +1230,9 @@
             font-size: 18px;
         }
     }
+    .parasites__slide:hover .hover-el span {
+        font-size: 18px;
+    }
 
     .parasites__slide img {
         max-width: 200px;
@@ -1362,8 +1386,11 @@
             width: 130px;
             height: 130px;
             border: 2px solid #272729;
-            font-size: 16px;
+            font-size: 14px;
         }
+    }
+    .parasites__slide:hover .hover-el span {
+        font-size: 16px;
     }
 
     .parasites__slider {
@@ -1449,9 +1476,10 @@
         display: none;
     }
 
-    .advantages:before{
+    .advantages:before {
         display: none;
     }
+
     .advantages__title-mobile {
         display: block;
         text-align: center;
@@ -1472,14 +1500,9 @@
         transform: translateY(-5px);
     }
 
-    .parasites__slide .hover-el {
-        width: 140px;
-        height: 140px;
 
-        span {
-            width: 110px;
-            height: 110px;
-        }
+    .parasites__slide .hover-el {
+        display: none;
     }
 
     .advantages {
@@ -1686,10 +1709,6 @@
         transform: translateY(-5px);
     }
 
-    .parasites__slide .hover-el {
-        display: none;
-    }
-
     .parasites__inner {
 
         .swiper-button-next,
@@ -1833,6 +1852,7 @@
     .heroscreen__inner-btn {
         width: 100%;
     }
+
     .heroscreen .award {
         width: 100px;
         height: 100px;
@@ -1854,7 +1874,8 @@
 
     .services__item-img {
         height: 240px;
-        img{
+
+        img {
             transform: scale(1.01);
         }
     }
@@ -1932,6 +1953,10 @@
 
     .heroscreen__inner {
         padding: 20px 0 40px;
+
+        br {
+            display: none;
+        }
     }
 
     .heroscreen__inner h1 {

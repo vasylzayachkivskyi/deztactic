@@ -137,7 +137,7 @@
 
 .sp-features__item {
     text-align: center;
-    width: 21%;
+    min-width: 21%;
 
     .icon {
         padding-bottom: 38px;
@@ -462,6 +462,12 @@
 }
 
 @media (max-width: 767.8px) {
+    .sp-features{
+        br{
+            display: none;
+        }
+    }
+
     .sp-steps__item {
         width: 50%;
     }
@@ -537,21 +543,30 @@
     .heropest__right-info .info-col {
         padding: 5px 10px;
     }
+
     .sp-steps__btn {
         margin-top: 26px;
     }
+
     .sp-steps__inner {
         row-gap: 20px;
     }
+
     .sp-steps__item .content h4 {
         font-size: 15px;
         margin-bottom: 5px;
     }
+
     .sp-steps__item .content p {
         font-size: 12px;
     }
+
     .sp-steps__item .content a {
         font-size: 12px;
+    }
+
+    .sp-steps__item .content {
+        width: calc(100% - 95px);
     }
 
     .sp-steps__item {
@@ -560,23 +575,28 @@
         text-align: left;
         padding: 0;
     }
+
     .sp-steps__item .icon {
         margin-right: 10px;
         margin-bottom: 0;
         height: 100%;
         width: 85px;
         text-align: center;
-        span{
+
+        span {
             position: relative;
             top: initial;
             left: initial;
         }
-        img{
+
+        img {
             width: 85px;
             height: auto;
             background-size: cover;
         }
     }
+
+
 
     .heropest__right-info .info-col+.info-col {
         padding-left: 17px;

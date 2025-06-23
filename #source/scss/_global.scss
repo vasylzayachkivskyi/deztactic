@@ -88,6 +88,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border: none;
 
     &:hover {
         background-color: #FFD500;
@@ -236,7 +237,7 @@ body {
         padding: 5px 20px;
         font-size: 12px;
         min-width: 288px;
-        max-width: 288px;
+        max-width: 288px!important;
         width: 100%;
 
         svg {

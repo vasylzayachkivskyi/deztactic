@@ -441,6 +441,13 @@ article {
     &:last-child {
         margin-bottom: 0;
     }
+    &:hover span{
+        color: #FFD500;
+
+        &:after {
+            transform: translate(5px, -50%);
+        }
+    }
 }
 
 .aside__item-image {
@@ -468,7 +475,7 @@ article {
         font-weight: 700;
     }
 
-    a {
+    span {
         font-size: 15px;
         line-height: 130%;
         width: fit-content;
@@ -493,15 +500,6 @@ article {
             top: 50%;
             transform: translateY(-50%);
             transition: .3s;
-        }
-
-
-        &:hover {
-            color: #FFD500;
-
-            &:after {
-                transform: translate(5px, -50%);
-            }
         }
     }
 }
@@ -982,17 +980,13 @@ article {
         width: 110px;
     }
 
-    .aside__item-descr a {
+    .aside__item-descr span {
         font-size: 12px;
         padding-right: 25px;
     }
 
-    .aside__item-descr a:after {
+    .aside__item-descr span:after {
         width: 17px;
         height: 17px;
-    }
-
-    .aside__item-descr a:before {
-        width: calc(100% - 25px);
     }
 }
